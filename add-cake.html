@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thêm bánh mới | Cake Manager</title>
+  <link rel="stylesheet" href="add-cake.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍰 Thêm bánh mới</h1>
+
+    <form id="addCakeForm">
+      <div class="form-group">
+        <label for="name">Tên bánh</label>
+        <input type="text" id="name" name="name" required placeholder="Nhập tên bánh...">
+      </div>
+
+      <div class="form-group">
+        <label for="category">Loại bánh</label>
+        <select id="category" name="category" required>
+          <option value="">-- Chọn loại bánh --</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Mô tả</label>
+        <textarea id="description" name="description" rows="4" placeholder="Nhập mô tả ngắn..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Giá (VNĐ)</label>
+        <input type="number" id="price" name="price" required min="0" placeholder="VD: 45000">
+      </div>
+
+      <div class="form-group">
+        <label for="image">Ảnh (URL)</label>
+        <input type="url" id="image" name="image" placeholder="https://example.com/cake.jpg">
+      </div>
+
+      <button type="submit" class="btn">Thêm bánh</button>
+    </form>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="add-cake.js"></script>
+</body>
+</html>
