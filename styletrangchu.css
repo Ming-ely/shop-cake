@@ -1,90 +1,224 @@
-/* Reset cơ bản */
+/* 🌊 Tete Bakery - Halloween Blue Theme */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
-  /* Tổng thể */
   body {
-    background: #fff8f5;
-    color: #333;
+    background-color: #031926; /* xanh đậm */
+    color: #e0f7fa; /* xanh nhạt dịu */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* ----- Navbar ----- */
+  header.navbar {
+    background: rgba(3, 37, 65, 0.95);
+    color: #a2ffff;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Header */
-  header {
-    background: #ffb6b9;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    position: fixed;
     top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  #searchBox {
-    padding: 10px 15px;
-    width: 80%;
-    max-width: 400px;
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    font-size: 1rem;
-  }
-  
-  /* Grid bánh */
-  .cake-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 30px;
-  }
-  
-  .cake-item {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  .cake-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  }
-  
-  .cake-item img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.2);
   }
   
-  .cake-item h3 {
-    margin: 10px 0 5px;
+  header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #00bcd4;
+    letter-spacing: 2px;
+  }
+  
+  nav a {
+    color: #e0f7fa;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: 0.3s;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  .login-btn,
+  .register-btn {
+    background-color: #00acc1;
+    color: #fff;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    margin-left: 1rem;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color: #00e5ff;
+    color: #012a36;
+  }
+  
+  /* ----- Hero Section ----- */
+  .hero {
+    background: linear-gradient(to bottom, #00111a, #012a36);
+    background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e0f7fa;
+    padding-top: 80px;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(1, 26, 38, 0.8);
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    color: #00e5ff;
+    text-shadow: 0 0 20px #00bcd4;
+  }
+  
+  .hero-text p {
+    margin: 1rem 0 2rem;
     font-size: 1.2rem;
   }
   
-  .cake-item p {
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-    color: #666;
+  .btn {
+    background-color: #00bcd4;
+    color: #012a36;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
   }
   
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 15px;
-    background: #ffe0e3;
-    margin-top: auto;
+  .btn:hover {
+    background-color: #00e5ff;
+    color: #00111a;
+    box-shadow: 0 0 15px #00ffff;
   }
+  
+  /* ----- Menu Section ----- */
+  .menu {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #012a36;
+  }
+  
+  .menu h2 {
+    color: #00e5ff;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .menu-desc {
+    color: #b2ebf2;
+    margin-bottom: 3rem;
+    font-style: italic;
+  }
+  
+  .menu-type {
+    color: #4dd0e1;
+    margin: 2rem 0 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .menu-grid .item {
+    background-color: #02394a;
+    border-radius: 12px;
+    padding: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+  }
+  
+  .menu-grid .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+  
+  .menu-grid img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-grid h3 {
+    color: #00e5ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ----- About Section ----- */
+  .about {
+    background: #00111a;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .about h2 {
+    color: #00e5ff;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #b2ebf2;
+    font-size: 1.1rem;
+  }
+  
+  /* ----- Contact Section ----- */
+  .contact {
+    background: #012a36;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .contact h2 {
+    color: #00e5ff;
+    margin-bottom: 1rem;
+  }
+  
+  .contact p {
+    color: #b2ebf2;
+    margin: 0.4rem 0;
+  }
+  
+  /* ----- Footer ----- */
+  footer {
+    background: #00111a;
+    color: #80deea;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+  }
+  

@@ -3,25 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cửa hàng Bánh ngọt</title>
+  <title>Tete Bakery</title>
   <link rel="stylesheet" href="styletrangchu.css">
+  <script src="scripttrangchu.js"></script>
 </head>
 <body>
-  <header>
-    <h1>🍰 Sweet Bakery</h1>
-    <input type="text" id="searchBox" placeholder="Tìm bánh theo tên...">
+  <header class="navbar">
+    <div class="logo">Tete Bakery</div>
+    <nav>
+      <a href="#">Trang chủ</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">Giới thiệu</a>
+      <a href="#contact">Liên hệ</a>
+      <a href="login.html" class="login-btn">Đăng nhập</a>
+      <a href="register.html" class="register-btn">Đăng ký</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="cake-list" class="cake-grid">
-      <!-- Bánh sẽ được thêm bằng JS -->
-    </section>
-  </main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Ngọt ngào </h1>
+      <p>Bánh ngon Tete.</p>
+      <a href="#menu" class="btn">Khám phá Menu ngọt ngào</a>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>🍰 Menu</h2>
+    <p class="menu-desc">Thưởng thức hương vị ngọt ngào – thêm chút yêu thương vào từng chiếc bánh</p>
+  
+    <h3 class="menu-type">🧁 Bánh đặc biệt trong ngày</h3>
+    <div class="menu-grid">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1600692069943-37e46b1a0c46" alt="Pumpkin Pie">
+        <h3>Pumpkin Pie</h3>
+        <p>Bánh bí đỏ nướng thơm lừng, vị béo nhẹ và ngọt dịu – hương vị truyền thống đầy ấm áp.</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Strawberry Cupcake">
+        <h3>Strawberry Cupcake</h3>
+        <p>Cupcake vị dâu tươi, phủ lớp kem mềm mịn – ngọt ngào như nụ cười đầu ngày.</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1603190287605-e6ade32fa852" alt="Vanilla Donut">
+        <h3>Vanilla Donut</h3>
+        <p>Donut phủ vani và đường trắng, giòn bên ngoài – mềm bên trong, đơn giản mà ngon.</p>
+      </div>
+    </div>
+  
+    <h3 class="menu-type">🍪 Bánh ngọt truyền thống</h3>
+    <div class="menu-grid">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1605470207062-0882b0a7b5b3" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>Bánh kem socola đậm vị, phủ lớp ganache mịn – dành cho những tín đồ socola đích thực.</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1628191018505-3d4f1b56d3e3" alt="Blueberry Cupcake">
+        <h3>Blueberry Cupcake</h3>
+        <p>Cupcake việt quất tươi, vị chua nhẹ hòa quyện vị ngọt kem tươi – tinh tế và thanh mát.</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Cookies">
+        <h3>Butter Cookies</h3>
+        <p>Bánh quy bơ vàng giòn tan, thơm nức mũi – món quà nhỏ mang vị ngọt yêu thương.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="about" class="about">
+    <h2>TeTe Bakery</h2>
+    <p>
+    Tiệm bánh Tete sẵn sàng phục vụ quý khách
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>🕸️ Liên hệ với tiệm</h2>
+    <p>📍 123  bánh ngọt – Thị trấn Trảng Bom</p>
+    <p>📞 0987 654 321</p>
+    <p>📧 tete@bakery.vn</p>
+  </section>
+  
+
 
   <footer>
-    <p>© 2025 Sweet Bakery - Hương vị ngọt ngào mỗi ngày</p>
+    <p>© 2025 Bro’s Spooky Bakery | Made with 💀 and a lot of sugar</p>
   </footer>
-
-  <script src="scripttrangchu.js"></script>
 </body>
 </html>
