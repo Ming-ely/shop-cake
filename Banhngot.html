@@ -1,133 +1,27 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang bán bánh ngọt 🍰</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: #f9f4f0; color: #333; }
-    header {
-      background: #2264d7;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header h1 { font-size: 24px; color: #fff; }
-    nav a {
-      color: #fff; text-decoration: none; margin-left: 20px;
-      font-weight: bold; transition: 0.3s;
-    }
-    nav a:hover { text-decoration: underline; }
-
-    .search-bar {
-      margin: 20px auto;
-      max-width: 500px;
-      display: flex;
-      justify-content: center;
-    }
-    .search-bar input {
-      width: 80%;
-      padding: 10px;
-      border: 2px solid #ffb6c1;
-      border-radius: 5px 0 0 5px;
-      outline: none;
-    }
-    .search-bar button {
-      padding: 10px 20px;
-      background: #ffb6c1;
-      border: none;
-      color: white;
-      border-radius: 0 5px 5px 0;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .product {
-      background: #fff;
-      border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-    .product:hover { transform: scale(1.03); }
-    .product img { width: 100%; border-radius: 10px; }
-    .product h3 { margin: 10px 0; }
-    .product p { color: #1e76e9; font-weight: bold; }
-    .product button {
-      padding: 8px 12px;
-      background: #3669e9;
-      border: none;
-      color: white;
-      cursor: pointer;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #ffb6c1;
-      color: white;
-      margin-top: 30px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa hàng Bánh ngọt</title>
+  <link rel="stylesheet" href="styletrangchu.css">
 </head>
 <body>
   <header>
-    <h1>Tiệm Bánh Ngọt</h1>
-    <nav>
-      <a href="#">Trang chủ</a>
-      <a href="#">Sản phẩm</a>
-      <a href="#">Giỏ hàng</a>
-      <a href="#">Liên hệ</a>
-    </nav>
+    <h1>🍰 Sweet Bakery</h1>
+    <input type="text" id="searchBox" placeholder="Tìm bánh theo tên...">
   </header>
 
-  <div class="search-bar">
-    <input type="text" placeholder="Tìm bánh bạn thích..." />
-    <button>Tìm kiếm</button>
-  </div>
-
-  <section class="products">
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" alt="Bánh kem">
-      <h3>Bánh kem socola</h3>
-      <p>120.000đ</p>
-      <button>Thêm vào giỏ</button>
-    </div>
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1551022370-1b2e5b9f00e6" alt="Bánh cupcake">
-      <h3>Bánh Cupcake</h3>
-      <p>25.000đ</p>
-      <button>Thêm vào giỏ</button>
-    </div>
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Bánh dâu tây">
-      <h3>Bánh dâu tây</h3>
-      <p>45.000đ</p>
-      <button>Thêm vào giỏ</button>
-    </div>
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55" alt="Bánh su kem">
-      <h3>Bánh su kem</h3>
-      <p>15.000đ</p>
-      <button>Thêm vào giỏ</button>
-    </div>
-  </section>
+  <main>
+    <section id="cake-list" class="cake-grid">
+      <!-- Bánh sẽ được thêm bằng JS -->
+    </section>
+  </main>
 
   <footer>
-    © 2025 Tiệm Bánh Ngọt — Ngọt ngào mỗi ngày 🍰
+    <p>© 2025 Sweet Bakery - Hương vị ngọt ngào mỗi ngày</p>
   </footer>
+
+  <script src="scripttrangchu.js"></script>
 </body>
 </html>

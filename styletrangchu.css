@@ -1,0 +1,90 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Tổng thể */
+  body {
+    background: #fff8f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background: #ffb6b9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  #searchBox {
+    padding: 10px 15px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  /* Grid bánh */
+  .cake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .cake-item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .cake-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+  
+  .cake-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .cake-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .cake-item p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #ffe0e3;
+    margin-top: auto;
+  }
